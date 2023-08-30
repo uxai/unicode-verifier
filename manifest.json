@@ -1,7 +1,7 @@
 {
     "manifest_version": 2,
     "name": "URL unicode verifier",
-    "version": "1.0",
+    "version": "1.2",
     "description": "This plugin checks for potential phishing attacks by analyzing the URL you are visiting for irregularities in the characters encoding.",
     "icons": {
         "48": "images/icon.svg"

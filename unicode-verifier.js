@@ -8,11 +8,9 @@ const field = document.createElement("div");
 field.style.cssText = 'font-size: 24px;font-weight:bold;background-color:#D5D5D5; color: #8A8A8A; margin:10px 0; border-radius: 6px;overflow: hidden; padding: 5px 15px; overflow-x: scroll;';
 
 for(l = 0; l < url.length; l++) {
-    if (!pattern.test(url[l])) {
+    if (pattern.test(url[l]) == false) {
         field.innerHTML += "<span style=\"color:#F80000;\">" + url[l] + "</span>"
         scam = true
-    } else {
-        field.innerHTML += url[l]
     }
 }
 if (scam) {
